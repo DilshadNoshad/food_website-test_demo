@@ -6,8 +6,8 @@
 @media screen and (max-width: 999px) {
   nav .navbar {
     max-width: 100%;
-    padding: 0 25px;
-    margin: 20px 10px;
+    padding: 10px 15px;
+    margin: 0 15px;
   }
   nav .navbar .logo img {
     width: 150px;

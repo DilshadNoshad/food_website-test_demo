@@ -29,15 +29,24 @@
 }
 
 /* header background */
+
 header {
   width: 100%;
   height: 625px;
+  position: relative;
+}
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: url("../img/veg.webp") center no-repeat;
   background-size: cover;
-  position: relative;
   overflow: hidden;
+  z-index: -1;
 }
-
 /*--------------------------------------------------text center */
 .center {
   text-align: center;
@@ -429,12 +438,21 @@ section .title_white span {
 
 /*---------------------------------------------------subcribe section */
 .subcribe_bg {
+  position: relative;
+}
+.subcribe_bg::before {
+  content: "";
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
   background: url("../img/white.webp") center no-repeat;
   background-size: cover;
-  position: relative;
+  position: absolute;
   overflow: hidden;
+  z-index: -1;
 }
+
 .subscribe_form {
   display: flex;
   justify-content: center;
@@ -477,11 +495,19 @@ section .title_white span {
 /*---------------------------------------------------testimonial */
 
 .testimonial {
+  position: relative;
+}
+.testimonial::before {
+  content: "";
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
   background: url("../img/yellow.webp") center no-repeat;
   background-size: cover;
-  position: relative;
+  position: absolute;
   overflow: hidden;
+  z-index: -1;
 }
 
 .test_flex {
