@@ -1,3 +1,7 @@
+/* For now i dont use this */
+@media screen and (max-width: 1170px) {
+}
+
 /* navbar media query */
 @media screen and (max-width: 999px) {
   nav .navbar {
@@ -54,6 +58,13 @@
     display: block;
     line-height: 40px;
     text-align: center;
+  }
+
+  /* search bar */
+  .navbar .nav-links .menus .sub-menu {
+    left: 0px;
+    width: 250px;
+    margin: 0 10px;
   }
 }
 
@@ -254,23 +265,21 @@
     padding: 20px 0;
   }
   /* section statics  end*/
-  .row-foot {
-    flex-direction: column;
-  }
 
   .column-foot {
-    max-width: 600px;
+    max-width: 300px;
     height: 300px;
+    padding: 15px;
   }
 
   .heading_first {
-    font-size: 28px;
+    font-size: 1.8rem;
   }
 
   .main-para {
-    font-size: 1.9rem;
+    font-size: 1.2rem;
   }
   .sub-link {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
   }
 }

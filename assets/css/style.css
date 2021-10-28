@@ -143,6 +143,51 @@ nav .navbar .nav-links .sidebar-logo .fa-times {
   font-weight: 700;
   display: none;
 }
+
+/* search bar */
+.navbar .nav-links .menus .sub-menu {
+  position: absolute;
+  top: 50px;
+  line-height: 20px;
+  left: -250px;
+  right: 0px;
+  background: white;
+  box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px,
+    rgb(0 0 0 / 30%) 0px 3px 7px -3px;
+  border-radius: 5px;
+  display: none;
+  width: 300px;
+  padding: 10px 0;
+}
+.navbar .nav-links .menus li:hover .sub-menu {
+  display: block;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.navbar .nav-links .menus .sub-menu li {
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0.5rem 0.4rem;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  border-bottom: 2px solid var(--clr-primary);
+}
+
 /*--------------------------------------------------------navbar end*/
 /*--------------------------------------------------------Hero Section Texts*/
 .flex_box {
@@ -540,6 +585,3 @@ section .title_white span {
 }
 
 /*------------------------------------------------end footer */
-
-@media screen and (max-width: 1170px) {
-}
