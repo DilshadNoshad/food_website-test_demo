@@ -1,0 +1,545 @@
+/* imported font family */
+
+@import url("https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Poppins&display=swap");
+
+/* CSS Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+:root {
+  /*------------ rem value pick from here--------------*/
+
+  font-size: 62.5%;
+  /* Default color variables */
+
+  --clr-primary: #ffc200;
+  --clr-secondary: #000;
+  --clr-gray: #dddddd;
+  --clr-light: #fff;
+  --clr-white-smoke: #ebebeb;
+  --clr-secondary-light: #2f2f2f;
+  --transparent: transparent;
+}
+
+/* header background */
+header {
+  width: 100%;
+  height: 625px;
+  background: url("../img/veg.webp") center no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+/*--------------------------------------------------text center */
+.center {
+  text-align: center;
+}
+
+/* heading constant font family */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+/*--------------------------------------------------------navbar */
+nav {
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 60px;
+  background: var(--transparent);
+  z-index: 200;
+}
+
+nav .navbar {
+  display: flex;
+  height: 100%;
+  max-width: 100%;
+  justify-content: space-between;
+  margin: 0 75px;
+  align-items: baseline;
+  padding: 0px 30px;
+  width: auto;
+}
+
+nav .navbar .logo img {
+  width: 40px;
+  transform: scale(3);
+  display: block;
+}
+
+nav .navbar .nav-links {
+  height: 100%;
+  line-height: 20px;
+}
+
+nav .navbar .nav-links .menus li {
+  display: flex;
+  position: relative;
+  align-items: center;
+  list-style: none;
+  padding: 0 10px;
+}
+nav .navbar .nav-links .menus {
+  display: flex;
+}
+
+nav .navbar .nav-links .menus li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--clr-light);
+  white-space: nowrap;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  margin-top: 15px;
+}
+
+.line {
+  position: relative;
+  text-align: center;
+  order: 3;
+}
+.line:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: calc(50px * 0.4);
+  right: calc(50px * 0.4);
+  bottom: 10%;
+  pointer-events: none;
+  height: 2px;
+  width: 0;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-bottom: 0;
+  opacity: 0;
+  z-index: 5;
+  transition: all 0.3s linear;
+}
+.line:hover:after {
+  opacity: 1;
+  width: 50%;
+  background: var(--clr-primary);
+}
+
+.navbar .fa-bars,
+nav .navbar .nav-links .sidebar-logo .logo-name,
+nav .navbar .nav-links .sidebar-logo .fa-times {
+  font-size: 30px;
+  font-weight: 700;
+  display: none;
+}
+/*--------------------------------------------------------navbar end*/
+/*--------------------------------------------------------Hero Section Texts*/
+.flex_box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 400px;
+}
+.flex_wrap {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+}
+
+.header_title {
+  font-size: 8rem;
+  color: var(--clr-primary);
+  font-family: "Grand Hotel", cursive;
+}
+.header_para {
+  font-size: 1.8rem;
+  color: var(--clr-light);
+  padding-right: 8rem;
+}
+/*--------------------------------------------------------Hero Section Texts end*/
+/* Constant all sections  */
+section {
+  width: 100%;
+  height: 550px;
+}
+
+/*-------------------------------------------------------- section one */
+.sec_best_sell {
+  margin-bottom: 15rem;
+  height: auto;
+}
+.content .title {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  margin-top: 7rem;
+}
+
+.content .title_para {
+  font-size: 18px;
+  text-align: center;
+  padding: 10px 180px;
+  margin-bottom: 2.5rem;
+}
+section .title span {
+  color: var(--clr-secondary);
+  font-size: 6rem;
+  position: relative;
+  padding-bottom: 8px;
+  font-family: "Grand Hotel", cursive;
+}
+section .cus_name span {
+  color: var(--clr-secondary);
+  font-size: 4rem;
+  position: relative;
+  padding-bottom: 8px;
+  font-family: "Grand Hotel", cursive;
+}
+
+.grid {
+  display: grid;
+  width: 100%;
+  grid-gap: 28px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  align-items: center;
+}
+
+.grid-item {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card-header {
+  font-size: 3rem;
+  font-family: "Grand Hotel", cursive;
+}
+
+.card-text {
+  font-size: 1.2rem;
+  padding: 10px 70px;
+}
+
+.card img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+/*-------------------------------------------------------- section one */
+/* button */
+.btnb {
+  background-color: var(--clr-secondary);
+  color: var(--clr-secondary);
+  text-decoration: none;
+  padding: 10px 45px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 20px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.btnb::before {
+  content: " ";
+  position: absolute;
+  height: 100%;
+  width: 55%;
+  background: var(--clr-primary);
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  z-index: -1;
+  transition: all 0.3s ease-out;
+}
+
+.btnb::after {
+  content: " ";
+  position: absolute;
+  height: 100%;
+  width: 55%;
+  right: 0;
+  top: 0;
+  background: var(--clr-primary);
+  border-radius: 5px;
+  z-index: -1;
+  transition: all 0.3s ease-out;
+}
+
+.btnb:hover:before {
+  width: 0;
+}
+
+.btnb:hover:after {
+  width: 0;
+}
+
+.btnb:hover {
+  cursor: pointer;
+  color: var(--clr-light);
+}
+/* button end */
+
+/*----------------------------------------------left right promo section*/
+
+.sec_same-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+}
+
+.sec_same-details .left {
+  width: 50%;
+}
+.sec_same-details .left img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.sec_same-details .right {
+  width: 50%;
+}
+.sec_same-details .right .sec_same_head {
+  color: var(--clr-primary);
+  font-size: 6rem;
+  margin-bottom: 10px;
+  font-family: "Grand Hotel", cursive;
+}
+.sec_same-details .right .sec_same_para {
+  color: var(--clr-light);
+  font-size: 18px;
+}
+/*----------------------------------------------left right promo section*/
+/*-------------------------------------------------statistics */
+
+.white {
+  color: var(--clr-light) !important;
+}
+.content .title_white {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  margin-top: 7rem;
+}
+section .title_white span {
+  color: var(--clr-light);
+  font-size: 6rem;
+  position: relative;
+  padding-bottom: 8px;
+  font-family: "Grand Hotel", cursive;
+}
+
+.statis_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 80px;
+}
+
+.static_cat {
+  color: var(--clr-light);
+  font-size: 3rem;
+  font-weight: 800;
+}
+.static_graph {
+  color: var(--clr-primary);
+  font-weight: 900;
+}
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 4px solid var(--clr-light);
+  line-height: 50px;
+  text-align: center;
+  font-size: 30px;
+  margin: 25px auto;
+  padding: 40px 0;
+}
+/*-------------------------------------------------statistics end*/
+/* Artical background */
+.pro_bg {
+  width: 100%;
+  background: url("../img/newdeno.png") no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  margin: 8rem 0;
+  padding-top: 15rem;
+} /* Artical background */
+
+/*---------------------------------------------------subcribe section */
+.subcribe_bg {
+  width: 100%;
+  background: url("../img/white.webp") center no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+.subscribe_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.input-group {
+  position: relative;
+  width: 100%;
+  box-shadow: 0 20px 40px rgb(61 65 84 / 15%);
+  max-width: 500px;
+}
+
+.form-control {
+  border: none;
+  padding: 15px;
+  width: 70%;
+}
+
+.btn {
+  background-color: var(--clr-primary);
+  color: var(--clr-secondary);
+  text-transform: uppercase;
+  border: none;
+  padding: 10px 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+  width: 30%;
+  font-size: 1.5rem;
+}
+.btn:hover {
+  background-color: var(--clr-secondary);
+  color: var(--clr-primary);
+}
+
+/*---------------------------------------------------subcribe section end*/
+/*---------------------------------------------------testimonial */
+
+.testimonial {
+  width: 100%;
+  background: url("../img/yellow.webp") center no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.test_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial .content .test_para {
+  padding: 10px 25%;
+}
+/*---------------------------------------------------testimonial end*/
+/*-------------------------------------------------- footer */
+.footer {
+  width: 100%;
+  background-color: var(--clr-secondary-light);
+  color: var(--clr-light);
+  font-family: poppins;
+  height: auto;
+}
+
+.column-foot {
+  width: auto;
+  height: 350px;
+  padding: 30px;
+  margin: 10px;
+  max-width: 650px;
+}
+
+.row-foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.heading_first {
+  font-size: 20px;
+  color: var(--clr-light);
+  position: relative;
+  text-transform: uppercase;
+}
+
+.main-para {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+.sub-link {
+  list-style: none;
+  font-size: 1.5rem;
+}
+.sub-link a {
+  text-decoration: none;
+  color: var(--clr-gray);
+}
+
+.ul-flex {
+  display: flex;
+  list-style: none;
+}
+.icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  vertical-align: middle;
+  background-color: var(--clr-light);
+  color: var(--clr-secondary);
+  margin-right: 5px;
+  font-size: 1.2rem;
+}
+
+.fa-facebook-f:hover {
+  background: #3b5998;
+  cursor: pointer;
+}
+
+.fa-instagram:hover {
+  background: #d6249f;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.fa-twitter:hover {
+  background: #1da1f2;
+  cursor: pointer;
+}
+
+.fa-whatsapp:hover {
+  background: #52ca5f;
+  cursor: pointer;
+}
+
+/*------------------------------------------------end footer */
+
+@media screen and (max-width: 1170px) {
+}
