@@ -419,7 +419,7 @@ section .title_white span {
 /* Artical background */
 .pro_bg {
   width: 100%;
-  background: url("../img/newdeno.png") no-repeat;
+  background: url("../img/newbgmain.png") no-repeat;
   background-size: cover;
   position: relative;
   overflow: hidden;
