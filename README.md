@@ -37,7 +37,7 @@ git clone
 
 # Site Preview
 
-![screenshot](assets/img/food_website.png)
+![screenshot](assets/img/food-website.png)
 
 <br>
 
